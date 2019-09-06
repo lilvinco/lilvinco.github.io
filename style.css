@@ -371,7 +371,7 @@ ul {
 
 
 
-.dropdown-toggle {
+.contact-btn {
   margin-left: 24px;
   padding: 0;
   cursor: pointer;
@@ -387,39 +387,31 @@ ul {
   border-radius: 10px;
   min-width: 120px;
 }
+
 @media only screen and (max-width: 479px) {
-  .dropdown-toggle {
+  .contact-btn {
     margin-left: 15px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .dropdown-toggle {
+  .contact-btn {
     margin-left: 15px;
   }
 }
-.dropdown-toggle:last-child {
-  margin-left: 0;
-}
-.dropdown-toggle.open {
-  width: auto !important;
-  display: inline-block;
-}
-.dropdown-toggle::after {
-  display: none;
-}
 
 .contact-form {
-  position: relative;
   display: inline-block;
   background-color: #ffffff;
 }
 
 .contact-form-content {
   display: none;
-  position: absolute;
-  background-color: #ffffff;
+  position: relative;
+  width: 50%;
+  background-image: linear-gradient(to bottom, #fff, #fcfcf7);;
   right: 0;
-  min-width: 160px;
+  margin:0px ;
+  padding: 20px 0px;
   z-index: 1;
 }
 
@@ -447,7 +439,7 @@ ul {
 
 .contact-form .dropdown-menu {
   width: 290px;
-  transform: translate3d(120px, 0px, 0px) !important;
+  margin:0px auto;
 }
 @media only screen and (max-width: 767px) {
   .contact-form .dropdown-menu {
@@ -517,6 +509,26 @@ ul {
   background: #8a8f6a;
 }
 
+.contact-submit-btn .close {
+  background: #8a8f6a none repeat scroll 0 0;
+  border: 2px;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.contact-submit-btn .close:hover {
+  background: #333333;
+}
+
 .form-messege {
   margin-bottom: 0;
   margin-top: 3px;
@@ -530,3 +542,4 @@ ul {
   color: #008000;
   font-style: italic;
 }
+

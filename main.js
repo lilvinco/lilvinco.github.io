@@ -1,3 +1,10 @@
+function showForm(){
+    document.getElementById("formbox").style.display = "block"
+}
+function closeBox(){
+    document.getElementById("formbox").style.display = "none"
+}
+
 function validateForm() {
 
 	var name = document.forms["contact-form"]["fullname"];               
